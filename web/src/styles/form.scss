@@ -1,0 +1,233 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border: solid 1px rgba(0, 0, 0, 0);
+  background-image: radial-gradient(circle at 50% 50%, #403a5f, #211e2e 92%);
+  padding: 15px 20px;
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    width: 50%;
+    height: 90%;
+  }
+
+  .form--title {
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .form--ask__info {
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+    &_subtitle {
+      padding-bottom: 10px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+    }
+
+    &_line {
+      width: 100%;
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.75),
+        rgba(255, 255, 255, 0)
+      );
+    }
+  }
+
+  .form--project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: none;
+    width: 100%;
+
+    &__input {
+      background-color: #302c42;
+      border-color: white;
+      border-radius: 40px;
+      height: 40px;
+      color: #ffffff;
+      font-size: 12px;
+      padding-left: 15px;
+      padding-top: 3px;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+
+    &__textarea {
+      height: 100px;
+      background-color: #302c42;
+      border-color: white;
+      border-radius: 40px;
+
+      color: #ffffff;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+
+      overflow-y: hidden;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.form--autor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: none;
+  width: 100%;
+}
+.input {
+  background-color: #302c42;
+  border-color: white;
+  border-radius: 40px;
+  height: 40px;
+  color: #ffffff;
+  font-size: 12px;
+  padding-left: 15px;
+  padding-top: 3px;
+
+  &::placeholder {
+    color: #ffffff;
+  }
+}
+
+.form-ask-info {
+  padding: 20px;
+  text-align: center;
+  color: white;
+
+  &_subtitle {
+    padding-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  &_line {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0)
+    );
+  }
+}
+
+.buttons-img1 {
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  display: flex;
+}
+.buttons-img2 {
+  text-align: center;
+}
+
+.btn,
+.btn-large {
+  width: 121px;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  border: none;
+  padding: 0 5px;
+  height: 43px;
+  background: linear-gradient(90deg, #8176af -1.57%, #c0b7e8 98.43%);
+  border-radius: 40px;
+}
+
+.section_buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.btn--project {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 0 5px;
+  height: 43px;
+  background: linear-gradient(90deg, #8176af -1.57%, #c0b7e8 98.43%);
+  border-radius: 40px;
+  max-width: 300px;
+}
+
+.detail__link {
+  margin-right: 10px;
+}
+
+.get-avatar__upload-field {
+  display: none;
+}
+
+.get-avatar__label {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0 5px;
+  border: solid 2px white;
+}
+
+.btn-large {
+  width: 200px;
+  border: solid 2px white;
+  cursor: pointer;
+}
+.error--msj {
+  text-decoration: none;
+  color: rgb(95, 105, 196);
+  font-size: 12px;
+  @include desktop {
+    font-size: 14px;
+  }
+}
+
+.span--error {
+  color: rgb(255, 40, 40);
+  font-size: 13px;
+  margin-left: 15px;
+  font-family: $fontFamily;
+}
+.btn--reset {
+  color: white;
+  font-size: 20px;
+  margin-top: 15px;
+}

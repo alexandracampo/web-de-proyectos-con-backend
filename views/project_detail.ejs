@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+  <link rel="stylesheet" href="/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@300&family=Tilt+Neon&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="mainLanding__container__title">Proyectos Molones</h1>
+  </header>
+  <main>
+    <section class='section_buttons'>
+      <a class='btn--project' href='/'>Volver</a>
+      <a class="btn--project" href='/#/create'>Nuevo proyecto</a>
+    </section>
+
+
+    <section class='detail--autor'>
+      <section class='info--project-detail'>
+        <div class='wrap--title__preview'>
+          <div class='info--project__line1'></div>
+          <p class='info--project__subtitle'>Personal Project Card</p>
+          <div class='info--project__line2'></div>
+        </div>
+        <h2 class='info--project__title'>
+          <%= name %>
+        </h2>
+        <p class='info--project__slogan'>
+          <%= slogan %>
+        </p>
+        <p class='info--project__desc'>
+          <%= desc %>
+        </p>
+        <section class='info--proyect__section'>
+          <div class='info--project__technologies'>
+            <p class='info--project__technologies-text'>
+              <%= technologies %>
+            </p>
+          </div>
+          <div class='wrap--icon'>
+            <a href="<%= demo %>" target="_blank" rel="noreferrer"><i
+                class='fa-solid fa-globe info--project__technologies-icon1'></i></a>
+            <a href='<%= repo %>' target="_blank" rel="noreferrer"><i
+                class='fa-brands fa-github info--project__technologies-icon1'></i></a>
+          </div>
+        </section>
+      </section>
+
+      <section class='info--autor'>
+        <img class='info--autor__image' src="<%= photo %>" alt="autor-image" />
+        <p class='info--autor__job'>
+          <%= job %>
+        </p>
+        <p class='info--autor__name'>
+          <%= autor %>
+        </p>
+      </section>
+    </section>
+    <section class='preview  main--detailcard'>
+      <img class='detail--image' src="<%= image %>" alt="Foto de la
+          tarjeta" />
+    </section>
+  </main>
+
+  <!-- <section class="mainLanding__sectionCard">
+    <img class="preview__image" src="<%= image %>" alt="Foto de la
+          tarjeta">
+    <article class="preview__autor">
+      <div className="preview__autor__info-project">
+        <p className="preview__autor__info-project--subtitle">
+          Proyectos Molones
+        </p>
+        <h2 className="preview__autor__info-project--title">
+          <%= name %>
+        </h2>
+        <p className="preview__autor__info-project--slogan">
+          <%= slogan %>
+        </p>
+        <p className="preview__autor__info-project--desc">
+          <%= desc %>
+        </p>
+        <div className="preview__autor__info-project--technologies">
+          <p className="preview__autor__info-project--technologies--text">
+            <%= technologies %>
+          </p>
+        </div>
+        <div className="preview__autor__info-project--icons">
+          <a className="cardLink" href="<%= repo %>" target="_blank">
+            <i className="fa-brands fa-github-alt"></i>
+          </a>
+          <a className="cardLink" href="<%= demo %>" target="_blank">
+            <i className="fa-solid fa-globe"></i>
+          </a>
+        </div>
+      </div>
+
+      <div className="preview__autor__info-autor">
+        <img className="preview__autor__info-autor--image" src="<%= photo %>" alt="autor-image">
+
+        <p className="preview__autor__info-autor--job">
+          <%= job %>
+        </p>
+        <p className="preview__autor__info-autor--name">
+          <%= autor %>
+        </p>
+      </div>
+    </article>
+  </section> -->
+  </main>
+</body>
+
+</html>

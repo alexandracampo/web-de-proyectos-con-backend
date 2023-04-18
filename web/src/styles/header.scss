@@ -1,0 +1,41 @@
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  &--div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  @include tablet{
+    padding: 0px 20px 0 20px ;
+  }
+
+  &--img {
+    height: 25px;
+    margin-right: 5px;
+    @include tablet {
+      height: 35px;
+    }
+  }
+
+  &--img-adalab {
+    height: 30px;
+    @include tablet {
+        height: 45px;
+      }
+  }
+
+  &--text {
+    color: $white-50;
+    font-family: $fontPoppins;
+    font-size: 20px;
+    font-weight: 300;
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+}

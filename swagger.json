@@ -1,0 +1,94 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "My User Project CRUD",
+      "description": "My User Project Application API"
+    },
+    "host": "localhost:4000",
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "Proyectos molones",
+        "description": "API CRUD para proyectos molones"
+      }
+    ],
+    "paths":{
+        "/api/projects/add": {
+            "post": {
+              "tags": ["Personal Project Cards"],
+              "description": "Crear un nuevo proyecto con toda su info",
+              "parameters": [
+                {
+                  "name": "name",
+                  "in": "body",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "name": "slogan",
+                  "in": "body",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "name": "technologies",
+                  "in": "body",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "name": "demo",
+                  "in": "body",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "name": "retro",
+                  "in": "body",
+                  "required": false,
+                  "type": "string"
+                },
+                {
+                  "name": "desc",
+                  "in": "body",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "name": "autor",
+                  "in": "body",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "name": "job",
+                  "in": "body",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "name": "image",
+                  "in": "body",
+                  "required": true,
+                  "type": "string"
+                },
+                {
+                  "name": "photo",
+                  "in": "body",
+                  "required": true,
+                  "type": "string"
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "OK"
+                }
+              }
+            }
+          }
+    },
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"]
+  }
